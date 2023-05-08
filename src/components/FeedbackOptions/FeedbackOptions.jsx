@@ -1,9 +1,8 @@
 import PropTypes from 'prop-types';
-// import './Feedback.module.css';
+import './FeedBackOptions.module.css';
 
 export const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   const stateArr = Object.keys(options);
-  // console.log(stateArr);
 
   return (
     <div>

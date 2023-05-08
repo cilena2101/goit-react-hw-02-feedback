@@ -1,31 +1,5 @@
-// import React from 'react';
-// import PropTypes from 'prop-types';
-
-// const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
-// 	return (
-// 		<>
-// 			<p>Good:{good}</p>
-// 			<p>Neutral:{neutral}</p>
-// 			<p>Bad:{bad}</p>
-// 			<p>Total:{total}</p>
-// 			<p>Positive feedback:{positivePercentage} %</p>
-// 		</>
-// 	);
-// };
-
-// Statistics.propTypes = {
-// 	good: PropTypes.number,
-// 	neutral: PropTypes.number,
-// 	bad: PropTypes.number,
-// 	total: PropTypes.number,
-// 	positivePercentage: PropTypes.number
-// };
-
-// export default Statistics;
-
-
 import PropTypes from 'prop-types';
-// import css from './Statistics.module.css';
+import css from './Statistics.module.css';
 
 export const Statistics = ({
   good = 0,
@@ -49,9 +23,8 @@ export const Statistics = ({
       <li>
         Total: <span>{total}</span>
       </li>
-      {/* <li className={css.positive}> */}
-      <li>
-        Positive feedback: <span>{positivePercentage}%</span>
+      <li className={css.positive}>    
+       Positive feedback: <span>{positivePercentage}%</span>
       </li>
     </ul>
   );
